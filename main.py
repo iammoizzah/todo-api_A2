@@ -38,9 +38,7 @@ async def http_error_handler(request: Request, exc: HTTPException):
     # The assignment wants {"error": "..."} instead of FastAPI's default {"detail": "..."}
     return JSONResponse(status_code=exc.status_code, content={"error": exc.detail})
 
-# --- In-memory "database" ---------------------------------------------
-# A plain list of dicts. Resets every time the server restarts —
-# that's expected at this stage; a real database comes in Week 3.
+
 tasks = [
     {"id": 1, "title": "Buy milk", "done": False},
     {"id": 2, "title": "Write README", "done": False},
