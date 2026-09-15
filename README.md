@@ -117,7 +117,7 @@ forwards the email/password Supabase's SDK, and later verifies the JWT it
 hands back. If this server's code were ever leaked, no passwords would leak
 with it.
 
-## The mortality experiment
+## mortality experiment
 
 Create a task, restart the server, then `GET /tasks` — the task is gone,
 because it only ever lived in a Python list in memory. Your **user account**,
