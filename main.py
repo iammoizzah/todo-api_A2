@@ -154,7 +154,7 @@ def login(body: AuthCredentials):
     }
 
 
-# --- Public & protected gates -------------------------------------------
+
 
 @app.get("/public/info", summary="Open, unauthenticated info")
 def public_info():
