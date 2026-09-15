@@ -121,7 +121,6 @@ def delete_task(task_id: int):
 
 
 # --- Auth: sign up & log in --------------------------------------------
-# We never hash passwords or store credentials ourselves -- every call
 # here is forwarded straight to Supabase, which does that work for us.
 
 @app.post("/auth/signup", status_code=201, summary="Create a new account")
