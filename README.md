@@ -61,7 +61,7 @@ The server starts on **http://localhost:8000**. Interactive Swagger docs
 | PUT    | `/tasks/{id}`          | Update a task's title and/or done     | – | 200 | 404 if id doesn't exist, 400 if body invalid |
 | DELETE | `/tasks/{id}`          | Delete a task                         | – | 204 | 404 if id doesn't exist |
 
-Routes marked ✅ require `Authorization: Bearer <access_token>`. All errors
+Routes marked  require `Authorization: Bearer <access_token>`. All errors
 return JSON in the shape `{"error": "..."}`.
 
 ## Trying the full auth flow with curl
