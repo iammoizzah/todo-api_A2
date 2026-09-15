@@ -3,7 +3,7 @@ Creates and holds the single Supabase client used across the app.
 
 Reads SUPABASE_URL and SUPABASE_KEY from environment variables (loaded
 from .env by main.py). Never hardcode these values, and never use the
-service_role key here -- only the anon (public) key belongs in this app.
+service_role key here -- only the anon (public) key belongs in app.
 """
 import os
 
